@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+
+<style>
+@import url(https://fonts.googleapis.com/css?family=Lily+Script+One);
+
+body {
+	margin:0;
+	font-family:arial,tahoma,sans-serif;
+	font-size:12px;
+	font-weight:normal;
+	direction:ltr;
+  background:white;
+}
+
+input[type=submit] {
+	padding:15px 50px;
+	width:auto;
+	background:#1abc9c;
+	border:none;
+	border-radius:20px;
+	color:white;
+	cursor:pointer;
+	display:inline-block;
+	float:right;
+	clear:right;
+	-webkit-transition:0.2s ease all;
+	   -moz-transition:0.2s ease all;
+	    -ms-transition:0.2s ease all;
+	     -o-transition:0.2s ease all;
+	        transition:0.2s ease all;
+}
+
+input[type=submit]:hover {
+	opacity:0.8;
+}
+
+input[type="submit"]:active {
+	opacity:0.4;
+}
+
+.forgot,
+.register {
+	margin:10px;
+	clear:left;
+	display:inline-block;
+	color:cornflowerblue;
+	text-decoration:none;
+}
+
+.forgot:hover,
+.register:hover {
+	color:darkgray;
+}
+
+.container{
+	margin: 20% auto 0px auto;
+	text-align: center;
+}
+
+.logout {
+	position: fixed;
+	top: 40px;
+	right: 40px;
+	border-radius:20px;
+}
+
+</style>
+
+<body>
+<div class="container">
+<a class="register" href="addstudent.html"><input type="submit" value="add Student"></a>
+<br>
+<br>
+<br>
+<a class="register"  href="attendance.jsp"><input type="submit" value="Edit Fees Status"></a>
+<br>
+<br>
+<br>
+<a class="register"  href="ViewScreen.jsp"><input type="submit" value="View Fees Status"></a>
+</div>
+<a class="register logout"   href="Logout"><input type="submit" value="Logout"></a>
+
+</body>
+</html>
