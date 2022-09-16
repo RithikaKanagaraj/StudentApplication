@@ -19,13 +19,13 @@ public class Index extends HttpServlet {
 		
 		HttpSession session = request.getSession();
 		
-		if((String)session.getAttribute("email") != null)
+		if((String)session.getAttribute("email") == null)
 		{
-			System.out.println((String)session.getAttribute("email"));
 			response.sendRedirect("Login");	
 		}
 		else
 		{
+			System.out.println((String)session.getAttribute("email"));
 			response.sendRedirect("Userscreen.html");
 		}
 		
